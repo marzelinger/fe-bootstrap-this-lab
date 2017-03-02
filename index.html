@@ -4,97 +4,94 @@
     <meta charset="UTF-8">
     <title>Weather World</title>
     <!-- ADD YOUR LINK TO BOOTSTRAP HERE -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+
+    <!-- This is the link to your custom stylesheet. Don't worry about it for now. -->
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
-       <div class="text-center"> <!-- Add the text-center class to this div -->
+    <div><!-- Add the container class to this div, it will hold all of the site content as a wrapper -->
+       <div> <!-- Add the text-center class to this div -->
         <h1>WeatherWorld.com</h1>
-        <p class="lead">Where the world gets its weather.</p> <!-- What does the 'lead' class do? Add it to this p tag to find out. -->
+        <p>Where the world gets its weather.</p> <!-- What does the 'lead' class do? Add it to this p tag to find out. -->
       </div>
-      <div class="row"> <!-- Make this div a row, and each child div a column (there are three divs, so how wide should each one be?) -->
-        <div class="col-md-4 text-center">
-          <img class="img-circle" src="images/nyc.jpg"> <!-- Make all of the images Circles -->
+      <div> <!-- Make this div a row, and each child div a column (there are three divs, so how wide should each one be?) -->
+        <div>
+          <img src="images/nyc.jpg"> <!-- Make all of the images Circles -->
           <h2> New York </h2>
-          <button class="btn btn-primary"> See Weather </button> <!-- Give the buttons Bootstrap Styling -->
+          <button> See Weather </button> <!-- Give the buttons Bootstrap Styling -->
         </div>
-        <div class="col-md-4 text-center">
-          <img class="img-circle" src="images/san-francisco.jpg">
+        <div>
+          <img src="images/san-francisco.jpg">
           <h2> San Francisco </h2>
-          <button class="btn btn-primary"> See Weather </button>
+          <button> See Weather </button>
         </div>
-        <div class="col-md-4 text-center">
-          <img class="img-circle" src="images/chicago.jpg">
+        <div>
+          <img src="images/chicago.jpg">
           <h2> Chicago </h2>
-          <button class="btn btn-primary"> See Weather </button>
+          <button> See Weather </button>
         </div>
       </div>
 
-      <div class="text-center"> <!-- Add the text-center class to this div -->
+      <div> <!-- Add the text-center class to this div -->
        <h3>Current Forecast For NYC</h3>
       </div>
 
       <!-- Put the table below inside of a row and then into a column div with width of 8 bootstrap columns -->
       <!-- If you want it centered, try using offset to push it in by two columns. Use The documentation! -->
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <table class="table table-striped"> <!-- Make this table look great with bootstrap -->
-            <tr>
-              <th>Day</th>
-              <th>Temperature</th>
-              <th>Forecast</th>
-            </tr>
-            <tr>
-              <td>Monday</td>
-              <td>45 &#8451</td>
-              <td>Sunny</td>
-            </tr>
-            <tr>
-              <td>Tuesday</td>
-              <td>60 &#8451</td>
-              <td>Chance of Showers</td>
-            </tr>
-            <tr>
-              <td>Wednesday</td>
-              <td>65 &#8451</td>
-              <td>Thunderstorms</td>
-            </tr>
-            <tr>
-              <td>Thursday</td>
-              <td>65 &#8451</td>
-              <td>Sunny</td>
-            </tr>
-            <tr>
-              <td>Friday</td>
-              <td>45 &#8451</td>
-              <td>Partly Cloudy</td>
-            </tr>
-          </table>
-        </div>
-      </div>
+      <table> <!-- Make this table look great with bootstrap -->
+        <tr>
+          <th>Day</th>
+          <th>Temperature</th>
+          <th>Forecast</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>45 &#8451</td>
+          <td>Sunny</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>60 &#8451</td>
+          <td>Chance of Showers</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>65 &#8451</td>
+          <td>Thunderstorms</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>65 &#8451</td>
+          <td>Sunny</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>45 &#8451</td>
+          <td>Partly Cloudy</td>
+        </tr>
+      </table>
 
-      <div class="row text-center">
+      <div class="row"> <!-- Add in the text-center class to center the headings within -->
         <h3>Sign Up for More Information</h3>
-        <div class="col-md-6 col-md-offset-3"> <!-- Make this div 6 bootstrap columns wide, and center it in the page with an offset-->
-          <form> <!-- Look at the bootstrap documentation on forms and make this look great -->
-            <div class="form-group">
-              <label for="name"> Your Name </label>
-              <input type="text" class="form-control" id="name">
-            </div>
-            <div class="form-group">
-              <label for="email"> Your Email </label>
-              <input type="email" class="form-control" id="email">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-
+        <div> <!-- Make this div 6 bootstrap columns wide, and center it in the page with an offset-->
+          <form><!-- Look at the bootstrap documentation on forms and make this look great -->
+            <label for="name"> Your Name </label>
+            <input type="text" id="name">
+            <label for="email"> Your Email </label>
+            <input type="text" id="email">
+            <input type="submit">
           </form>
         </div>
       </div>
+    </div>
   </body>
 </html>
 
 <!-- MORE CHALLENGES -->
 
 <!-- 1. Add a Navigation Bar to The top of the page -->
-<!--  -->
+<!-- 2. Add a Checkbox to the form that agrees to receive email from weather world -->
+<!-- 3. Replace the top header with a Jumbotron header -->
+<!-- 4. In style.css add your own styling to the page! (fonts, colors, etc) -->
+
+<!-- 5. Add a carousel with images of other cities -->
